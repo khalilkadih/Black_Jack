@@ -1,18 +1,17 @@
 import java.lang.String;
-public enum Suit {
+public enum Symbole {
     CLUB("Clubs"),
     DIAMOND("Diamonds"),
     HEART("Hearts"),
     SPADE("Spades");
+    String nomSymbole;
 
-    String suitName;
+    Symbole(String nomSymbole) {
 
-    Suit(String suitName) {
-
-        this.suitName = suitName;
+        this.nomSymbole = nomSymbole;
     }
 
     public String toString(){
-        return suitName;
+        return nomSymbole;
     }
 }
